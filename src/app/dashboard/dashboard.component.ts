@@ -10,7 +10,8 @@ import { BooksService } from '../services/books.service';
 })
 export class DashboardComponent implements OnInit {
 
-  country:any = [];
+  country: any = [];
+  loading: boolean;
 
   constructor(private router: Router, private books: BooksService) {
   }
@@ -21,8 +22,10 @@ export class DashboardComponent implements OnInit {
   }
 
   getBooks() {
+    this.loading = true;
     this.books.getBooks().subscribe(res => {
       console.log(res);
+      this.loading = false;
       this.country = res;
 
     })

@@ -1,6 +1,5 @@
-<app-card title ="All Countries">
 
-    <p-table [value]="country">
+    <p-table [value]="country" [paginator]="true" [rows]="10" loadingIcon  ="fa-circle-o-notch" [loading] ="loading">
         <ng-template pTemplate="header">
             <tr>
                 <th>Name</th>
@@ -20,4 +19,3 @@
     </p-table>
 
 
-</app-card>
