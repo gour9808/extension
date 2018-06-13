@@ -27,7 +27,7 @@ export class ContainerComponent implements OnInit {
   {
     name: "Discussions",
     icon: "fa-users",
-    path: "/home/discussion",
+    path: "/home/discussions/all",
     active: true,
 
   },

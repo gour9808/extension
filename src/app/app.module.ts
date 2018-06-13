@@ -1,5 +1,4 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -26,22 +25,19 @@ import { OverlayPanelModule } from "primeng/components/overlaypanel/overlaypanel
 
 import { MultiSelectModule } from 'primeng/primeng';
 import { SizePipe } from './utils/pipes/size.pipe';
-import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgxChartsModule } from "@swimlane/ngx-charts";
 import { DashTileComponent } from './widgets/dash-tile/dash-tile.component';
 import { MenuItemComponent } from './widgets/menu-item/menu-item.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { ChartModule } from 'primeng/primeng';
-import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { InputFieldMultipleOptionComponent } from './widgets/input-field-multiple-option/input-field-multiple-option.component';
 import { DataLoaderComponent } from './data-loader/data-loader.component';
 import { SplashLoaderComponent } from './splash-loader/splash-loader.component';
-import { TableModule } from 'primeng/table'; 
-import { DiscussionsComponent } from './discussions/discussions.component';
+import  {  TableModule  }  from  'primeng/table';
 import { BooksService } from './services/books.service';
-
-
+import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
 
 @NgModule({
   declarations: [
@@ -64,19 +60,16 @@ import { BooksService } from './services/books.service';
     MenuItemComponent,
     ListItemComponent,
     DataLoaderComponent,
-    SplashLoaderComponent, DiscussionsComponent
-    
-
-
+    SplashLoaderComponent
   ],
   imports: [
+    BrowserAnimationsModule,
     AppRoutingModule,
     BrowserModule,
-    BrowserAnimationsModule,
     FormsModule,
     HttpModule, ChartModule,
     DataTableModule,
-    SharedModule,TableModule,
+    SharedModule, TableModule,
     DropdownModule,
     TooltipModule,
     AutoCompleteModule,
@@ -86,15 +79,17 @@ import { BooksService } from './services/books.service';
     AccordionModule,
     TabViewModule,
     ChipsModule,
-   
+
     OverlayPanelModule,
     FlexLayoutModule,
-  CheckboxModule,
-    DataGridModule,HttpClientModule,
+    CheckboxModule,
+    DataGridModule, HttpClientModule,
     GMapModule,
     NgxChartsModule
   ],
-  providers: [BooksService],
+  providers: [
+    SlimLoadingBarService,
+    BooksService],
 
   bootstrap: [AppComponent]
 })
