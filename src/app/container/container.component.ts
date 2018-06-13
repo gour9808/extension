@@ -21,7 +21,7 @@ export class ContainerComponent implements OnInit {
   {
     name: "Events",
     icon: "fa-line-chart",
-    path: "/home/events",
+    path: "/home/events/all",
     active: true
   },
   {

@@ -7,7 +7,7 @@ import { HttpModule, Http } from '@angular/http';
 import { DataTableModule, SharedModule, DropdownModule, TooltipModule, CheckboxModule, DataGridModule, AutoCompleteModule, GMapModule, DialogModule, CalendarModule, RadioButtonModule, AccordionModule, TabViewModule, ChipsModule } from 'primeng/primeng';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppComponent } from './app.component';
-import { appRoutes } from './app.routes';
+import { AppRoutingModule } from './app.routes';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ContainerComponent } from './container/container.component';
@@ -38,7 +38,6 @@ import { InputFieldMultipleOptionComponent } from './widgets/input-field-multipl
 import { DataLoaderComponent } from './data-loader/data-loader.component';
 import { SplashLoaderComponent } from './splash-loader/splash-loader.component';
 import { TableModule } from 'primeng/table'; 
-import { EventsComponent } from './events/events.component';
 import { DiscussionsComponent } from './discussions/discussions.component';
 import { BooksService } from './services/books.service';
 
@@ -62,17 +61,16 @@ import { BooksService } from './services/books.service';
     ButtonComponent,
     InputFieldMultipleOptionComponent,
     SizePipe,
-    DashboardComponent,
     MenuItemComponent,
     ListItemComponent,
     DataLoaderComponent,
-    SplashLoaderComponent, EventsComponent, DiscussionsComponent
+    SplashLoaderComponent, DiscussionsComponent
     
 
 
   ],
   imports: [
-    RouterModule.forRoot(appRoutes),
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,

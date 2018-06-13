@@ -6,9 +6,7 @@ import * as _ from 'lodash';
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
   styleUrls: ['./toolbar.component.scss'],
-  host: {
-    '(document:click)': 'closePopout($event)',
-  }
+  
 })
 export class ToolbarComponent implements OnInit {
 
@@ -37,10 +35,6 @@ export class ToolbarComponent implements OnInit {
    * This is used to hide the popout when clicking anywhere else on the screen.
    * @param event The click event
    */
-  closePopout(event) {
-    if (!this.elementView.nativeElement.contains(event.target)) //check if the clicked target is out icon
-      this.showPopout = false;
-  }
 
 
 }
