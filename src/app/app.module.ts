@@ -12,7 +12,6 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ContainerComponent } from './container/container.component';
 import { LoaderComponent } from './widgets/loader/loader.component';
 import { CircularProgressComponent } from './widgets/circular-progress/circular-progress.component';
-
 import { InputFieldTextComponent } from './widgets/input-field-text/input-field-text.component';
 import { InputFieldNumberComponent } from './widgets/input-field-number/input-field-number.component';
 import { InputFieldBooleanComponent } from './widgets/input-field-boolean/input-field-boolean.component';
