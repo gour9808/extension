@@ -14,7 +14,6 @@ export class ToolbarComponent implements OnInit {
   @Output() toggleSidenav = new EventEmitter<any>();
   @ViewChild('popOutButton') elementView: ElementRef;
   showPopout: boolean = false;
-  showFleet: boolean = false;
   showProfile: boolean = false;
 
   constructor(private router: Router) { }
@@ -30,11 +29,4 @@ export class ToolbarComponent implements OnInit {
   togglePopout() {
     this.showPopout = !this.showPopout;
   }
-
-  /**
-   * This is used to hide the popout when clicking anywhere else on the screen.
-   * @param event The click event
-   */
-
-
 }
