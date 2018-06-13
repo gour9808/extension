@@ -1,20 +1,13 @@
 import { Routes } from '@angular/router';
-
 import { ContainerComponent } from './container/container.component';
-
 import { DashboardComponent } from './dashboard/dashboard.component';
-
-import { LoginComponent } from './login/login.component';
-
 import { DataLoaderComponent } from './data-loader/data-loader.component';
 import { EventsComponent } from './events/events.component';
 import { DiscussionsComponent } from './discussions/discussions.component';
 
 export const appRoutes: Routes = [
     { path: '', redirectTo: 'load', pathMatch: 'full' },
-    { path: 'auth', component: LoginComponent },
      { path: 'load', component: DataLoaderComponent },
-
     {
         path: 'home', component: ContainerComponent,
         children: [

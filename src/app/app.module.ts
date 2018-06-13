@@ -32,7 +32,6 @@ import { DashTileComponent } from './widgets/dash-tile/dash-tile.component';
 import { MenuItemComponent } from './widgets/menu-item/menu-item.component';
 import { ListItemComponent } from './list-item/list-item.component';
 import { ChartModule } from 'primeng/primeng';
-import { LoginComponent } from './login/login.component';
 import {HTTP_INTERCEPTORS, HttpClient, HttpClientModule} from '@angular/common/http';
 
 import { InputFieldMultipleOptionComponent } from './widgets/input-field-multiple-option/input-field-multiple-option.component';
@@ -66,7 +65,6 @@ import { BooksService } from './services/books.service';
     DashboardComponent,
     MenuItemComponent,
     ListItemComponent,
-    LoginComponent,
     DataLoaderComponent,
     SplashLoaderComponent, EventsComponent, DiscussionsComponent
     

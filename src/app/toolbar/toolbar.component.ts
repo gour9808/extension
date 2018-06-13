@@ -42,7 +42,5 @@ export class ToolbarComponent implements OnInit {
       this.showPopout = false;
   }
 
-  logout() {
-    this.router.navigate(['/auth'], { replaceUrl: true });
-  }
+
 }
