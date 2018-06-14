@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core';
 
 import { ContainerComponent } from './container/container.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { DataLoaderComponent } from './data-loader/data-loader.component';
 import { EventsComponent } from './events/events.component';
 import { DiscussionsComponent } from './discussions/discussions.component';
 

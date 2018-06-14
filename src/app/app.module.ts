@@ -10,56 +10,24 @@ import { AppRoutingModule } from './app.routes';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { ContainerComponent } from './container/container.component';
-import { LoaderComponent } from './widgets/loader/loader.component';
-import { CircularProgressComponent } from './widgets/circular-progress/circular-progress.component';
-import { InputFieldTextComponent } from './widgets/input-field-text/input-field-text.component';
-import { InputFieldNumberComponent } from './widgets/input-field-number/input-field-number.component';
-import { InputFieldBooleanComponent } from './widgets/input-field-boolean/input-field-boolean.component';
-import { InputFieldOptionsComponent } from './widgets/input-field-options/input-field-options.component';
-import { InputFieldMultipleComponent } from './widgets/input-field-multiple/input-field-multiple.component';
-
-import { CardComponent } from './widgets/card/card.component';
-import { ButtonComponent } from './widgets/button/button.component';
 import { OverlayPanelModule } from "primeng/components/overlaypanel/overlaypanel";
-
 import { MultiSelectModule } from 'primeng/primeng';
 import { SizePipe } from './utils/pipes/size.pipe';
 import { NgxChartsModule } from "@swimlane/ngx-charts";
-import { DashTileComponent } from './widgets/dash-tile/dash-tile.component';
-import { MenuItemComponent } from './widgets/menu-item/menu-item.component';
-import { ListItemComponent } from './list-item/list-item.component';
 import { ChartModule } from 'primeng/primeng';
 import { HTTP_INTERCEPTORS, HttpClient, HttpClientModule } from '@angular/common/http';
-
-import { InputFieldMultipleOptionComponent } from './widgets/input-field-multiple-option/input-field-multiple-option.component';
-import { DataLoaderComponent } from './data-loader/data-loader.component';
-import { SplashLoaderComponent } from './splash-loader/splash-loader.component';
 import  {  TableModule  }  from  'primeng/table';
 import { BooksService } from './services/books.service';
 import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
+import { ListItemComponent } from './list-item/list-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashTileComponent,
     SidebarComponent,
     ToolbarComponent,
-    ContainerComponent,
-    LoaderComponent,
-    CircularProgressComponent,
-    InputFieldTextComponent,
-    InputFieldNumberComponent,
-    InputFieldBooleanComponent,
-    InputFieldOptionsComponent,
-    InputFieldMultipleComponent,
-    CardComponent,
-    ButtonComponent,
-    InputFieldMultipleOptionComponent,
+    ContainerComponent,ListItemComponent,
     SizePipe,
-    MenuItemComponent,
-    ListItemComponent,
-    DataLoaderComponent,
-    SplashLoaderComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -78,7 +46,6 @@ import { SlimLoadingBarService } from 'ng2-slim-loading-bar';
     AccordionModule,
     TabViewModule,
     ChipsModule,
-
     OverlayPanelModule,
     FlexLayoutModule,
     CheckboxModule,
