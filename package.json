@@ -11,9 +11,6 @@
         "v:min": "npm version minor -m \"Bump Version to %s\"",
         "v:pat": "npm version patch -m \"Bump Version to %s\"",
         "postversion": "git push",
-        "build": "npm run deploy:build && npm run deploy:builddock && npm run deploy:pushdock",
-        "test": "npm run test:build && npm run test:builddock && npm run test:pushdock",
-        "latest": "git fetch && git pull origin development",
         "checkout:dev": "git checkout development"
     },
     "private": true,
