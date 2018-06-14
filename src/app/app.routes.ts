@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 import { ExtraOptions, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
-
 import { ContainerComponent } from './container/container.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { EventsComponent } from './events/events.component';
@@ -24,10 +23,7 @@ export const dashboardRoutes: Routes = [
 
 export const appRoutes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
-    {
-        path: 'home', component: ContainerComponent, loadChildren: 'app/dashboard/dashboard.module#DashboardModule'
-
-    }
+    { path: 'home', component: ContainerComponent, loadChildren: 'app/dashboard/dashboard.module#DashboardModule' }
 
 ];
 
