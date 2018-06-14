@@ -11,15 +11,15 @@ export const eventRoutes: Routes = [
     { path: 'all', component: EventsComponent },
 ]
 
-export const discussionsRoutes:Routes = [
-    {path: 'all', component: DiscussionsComponent}
+export const discussionsRoutes: Routes = [
+    { path: 'all', component: DiscussionsComponent }
 ]
 
 export const dashboardRoutes: Routes = [
     { path: '', redirectTo: 'my', pathMatch: 'full' },
     { path: 'my', component: DashboardComponent },
     { path: 'events', loadChildren: 'app/events/events.module#EventsModule' },
-    {path: 'discussions', loadChildren : 'app/discussions/discussion.module#DisscussionsModule'}
+    { path: 'discussions', loadChildren: 'app/discussions/discussion.module#DisscussionsModule' }
 ];
 
 export const appRoutes: Routes = [

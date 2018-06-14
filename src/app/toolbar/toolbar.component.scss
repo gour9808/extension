@@ -52,34 +52,7 @@
             padding: 12px;
             border-bottom: 1px solid rgba(0, 0, 0, 0.16);
         }
-        // &:before {
-        //     content: "";
-        //     position: absolute;
-        //     width: 0;
-        //     height: 0;
-        //     border-width: 10px;
-        //     border-style: solid;
-        //     border-color: transparent transparent #FFFFFF transparent;
-        //     top: -20px;
-        //     left: 185px;
-        // }
-        app-menu-item:not(:last-child) {
-            border-bottom: 1px solid rgba(0, 0, 0, 0.16);
-        }
-        &.notification-popout {
-            color: rgba(0, 0, 0, 0.7);
-            // &:before {
-            //     content: "";
-            //     position: absolute;
-            //     width: 0;
-            //     height: 0;
-            //     border-width: 10px;
-            //     border-style: solid;
-            //     border-color: transparent transparent #FFFFFF transparent;
-            //     top: -20px;
-            //     left: 185px;
-            // }
-        }
+        
     }
     .button {
         color: rgba(0, 0, 0, 0.7);
@@ -116,30 +89,5 @@
             transition: 0s;
         }
     }
-    .flag-icon-background {
-        background-size: contain;
-        background-position: 50%;
-        background-repeat: no-repeat;
-    }
-    .flag-icon {
-        background-size: contain;
-        background-position: 50%;
-        background-repeat: no-repeat;
-        position: relative;
-        display: inline-block;
-        width: 1.33333333em;
-        line-height: 1em;
-        &:before {
-            content: "\00a0";
-        }
-        &.flag-icon-squared {
-            width: 1em;
-        }
-    }
-    .flag-icon-de {
-        background-image: url(../../assets/de.svg);
-    }
-    .flag-icon-en {
-        background-image: url(../../assets/en.svg);
-    }
+    
 }
